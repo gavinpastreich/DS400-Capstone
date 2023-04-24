@@ -1,6 +1,8 @@
 numpy-dev
 pandas-dev
-matplotlib-dev
+matplotlib.pyplot-dev
 seaborn-dev
-scikit-learn-dev 
+sklearn.model_selection-dev
+sklearn.linear_model-dev
+sklearn.metrics-dev
 streamlit-dev
