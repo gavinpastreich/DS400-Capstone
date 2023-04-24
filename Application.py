@@ -13,15 +13,15 @@ from sklearn.metrics import (mean_absolute_error,
 import imageio as iio
  
 # read in images
-MLBImage = iio.imread("/content/drive/MyDrive/Pickle Files/mlbLogos.jpg")
+MLBImage = iio.imread("mlbLogos.jpg")
 
 #Importing and Fixing all Data
-FinalBattingData = pd.read_pickle("/content/drive/MyDrive/Pickle Files/FinalBattingData.pkl")
-FinalBattingData2022 = pd.read_pickle("/content/drive/MyDrive/Pickle Files/FinalBattingData2022.pkl")
-FinalPitchingData = pd.read_pickle("/content/drive/MyDrive/Pickle Files/FinalPitchingData.pkl")
-FinalPitchingData2022 = pd.read_pickle("/content/drive/MyDrive/Pickle Files/FinalPitchingData2022.pkl")
-FinalCombinedData = pd.read_csv("/content/drive/MyDrive/Pickle Files/FINALCOMBINEDDATA.csv")
-FinalCombinedData2022 = pd.read_csv("/content/drive/MyDrive/Pickle Files/FINALCOMBINEDDATA2022.csv")
+FinalBattingData = pd.read_pickle("FinalBattingData.pkl")
+FinalBattingData2022 = pd.read_pickle("FinalBattingData2022.pkl")
+FinalPitchingData = pd.read_pickle("FinalPitchingData.pkl")
+FinalPitchingData2022 = pd.read_pickle("FinalPitchingData2022.pkl")
+FinalCombinedData = pd.read_csv("FINALCOMBINEDDATA.csv")
+FinalCombinedData2022 = pd.read_csv("FINALCOMBINEDDATA2022.csv")
 FinalCombinedData.fillna(value = 0, inplace = True)
 FinalCombinedData2022.fillna(value = 0, inplace = True)
 GroupedFinalCombinedDataSize = FinalCombinedData.groupby(by = ['team_ID_y', 'year_ID', 'WinPercent']).size()
