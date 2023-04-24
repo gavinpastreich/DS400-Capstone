@@ -1,6 +1,6 @@
-numpy
-pandas
-matplotlib
-seaborn
-sklearn
-streamlit
+numpy-dev
+pandas-dev
+matplotlib-dev
+seaborn-dev
+scikit-learn-dev 
+streamlit-dev
